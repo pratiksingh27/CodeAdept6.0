@@ -1,10 +1,10 @@
 .dark{
     background-color: #091015;
     color: white;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 .para{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .center{
     text-align: center;
@@ -35,7 +35,7 @@
     display: inline-block;
 }
 .gap{
-    column-gap: 10px; 
+    column-gap: 15px; 
 }
 footer{
     /* width: 100vw; */
@@ -69,4 +69,5 @@ footer{
 }
 .space{
     margin: 30px auto;
+    margin-top: 0;
 }

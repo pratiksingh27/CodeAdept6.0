@@ -4,13 +4,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 body {
     font-family: "Poppins", sans-serif;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     /* color: white; */
+    overflow-x: hidden;
 
+}
+a{
+    text-decoration: none;
 }
 
 p {
@@ -193,7 +198,7 @@ a {
 .about-heading {
     text-align: center;
     font-size: 45px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-weight: 500;
 }
 
@@ -234,6 +239,8 @@ a {
 /* contact start*/
 .form-designe {
     width: 50vw;
+    /* padding-right: 10px; */
+    margin: 10px;
 }
 
 .form-control {
@@ -243,10 +250,13 @@ a {
 
 .input {
     width: 50%;
+    border-radius: 5px;
 }
 
 .subject {
     width: 100%;
+    border-radius: 5px;
+    /* margin: 10px 10px 5px 0; */
 }
 
 .flex1 {
@@ -258,6 +268,19 @@ a {
     text-align: left;
     margin: 0px;
     margin-bottom: 10px;
+}
+#uname{
+    margin-right: 10px;
+}
+.fab{
+    font-size: 30px;
+    align-items: center;
+    color: #287ab9;
+}
+.fas{
+    color: #287ab9;
+    font-size: 30px;
+    justify-content: center;
 }
 
 /* contact end */
@@ -323,7 +346,7 @@ a {
 
 .top-section {
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -366,7 +389,7 @@ a {
 .section {
     display: flex;
     opacity: 0;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
     transition: 600ms ease;
     position: relative;
     z-index: 1;

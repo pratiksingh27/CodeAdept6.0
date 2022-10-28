@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="./CSS/about.css">
     <link rel="stylesheet" href="./CSS/other.css">
     <link rel="stylesheet" href="./CSS/footer.css">
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("agOssSMp4nkQzA2IO");
+   })();
+</script> -->
 </head>
 
 <body>
@@ -279,16 +287,17 @@
             <div class="flex end">
                 <div class="line-height para">
                     <p class="para">
-                        <h3>Email:</h3>
-                        codeadeptrgtu@gmail.com
+                        
+                        <h3><i class="fas fa-envelope"></i> Email:</h3>
+                        <a href="mailto:codeadept@gmail.com">codeadeptrgtu@gmail.com</a>
                     </p>
                     <p class="para">
-                        <h3>Instagram:</h3>
-                        @codeadept
+                        <h3><i class="fab fa-instagram"></i> Instagram:</h3>
+                        <a href="https://www.instagram.com/codeadept/">@codeadept</a>
                     </p>
                     <p class="para">
-                        <h3>Linkedin:</h3>
-                        @codeadept
+                        <h3><i class="fab fa-linkedin"></i> Linkedin:</h3>
+                        <a href="https://www.linkedin.com/showcase/codeadept">@codeadept</a>
                     </p>
                 </div>
                 <!-- <div class="line-height">
@@ -301,37 +310,37 @@
                     <p class="center">(Lead)</p>
                 </p>
             </div> -->
-                <div onsubmit="return validate()">
+                <!-- <div onsubmit="return validate()"> -->
                     <!-- <div class="form-designe">
                     <h1>Registration Form</h1>
                 </div> -->
                     <div class="form-designe">
-                        <form action="" class="form line-height">
+                        <form action="https://formspree.io/f/mbjbzzel" class="form line-height" method="POST">
                             <!-- <label for="name">Username</label><br> -->
                             <div class="flex1">
 
-                                <input type="text" placeholder="Entre your full Name" id="uname"
-                                    class="form-control input" autocomplete="Off"><br>
-                                <p id="usererror" class="error"></p>
+                                <input type="text" name="username" placeholder="Entre your full Name" id="uname"
+                                    class="form-control input" autocomplete="Off" required><br>
+                                <!-- <p id="usererror" class="error"></p> -->
 
                                 <!-- <label for="name">Email</label><br> -->
-                                <input type="text" placeholder="Entre your Email" id="text" class="form-control input"
-                                    autocomplete="Off"><br>
-                                <p id="ibtext" class="error"></p>
+                                <input type="text" name="email" placeholder="Entre your Email" id="text" class="form-control input"
+                                    autocomplete="Off" required><br>
+                                <!-- <p id="ibtext" class="error"></p> -->
                             </div>
 
                             <!-- <label for="name">subject</label><br> -->
-                            <input type="text" placeholder="Entre your Phone Number" id="subject"
-                                class="form-control subject" autocomplete="Off"><br>
-                            <p id="numbererror" class="error"></p>
+                            <input type="text" name="Number" placeholder="Entre your Phone Number" id="phone_no"
+                                class="form-control subject" autocomplete="Off" required><br>
+                            <!-- <p id="numbererror" class="error"></p> -->
 
-                            <textarea name="" placeholder="Message" id="" class="form-control subject"
-                                rows="5"></textarea>
-                            <p class="error"></p>
-                            <input type="Submit" value="submit" class="btn">
+                            <textarea name="message" type="text" placeholder="Message" id="message" class="form-control subject"
+                                rows="5" required></textarea>
+                            <!-- <p class="error"></p> -->
+                            <input type="Submit" value="submit" class="btn center">
                         </form>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
 
@@ -420,7 +429,6 @@
         <script src="./JavaScript/landing.js"></script>
         <script src="./JavaScript/timeline.js"></script>
         <script src="./JavaScript/footer.js"></script>
-
 </body>
 
 </html>
